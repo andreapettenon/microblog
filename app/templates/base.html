@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Microblog</title>
+      {% else %}
+      <title>Welcome to Microblog</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Microblog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}       <!-- il blocco di nome "content" dice con quale contenuto riempire il blocco -->
+    </body>
+</html>
+
+<!-- se voglio creare pagine aggiuntive all'applicazione, posso crearle
+come template derivati dal medesimo base.html template. In questo modo posso
+avere tutte le pagine con lo stesso look-->
