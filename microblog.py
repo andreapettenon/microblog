@@ -1,0 +1,1 @@
+from app import app     # importa la variabile "app" che è membro del package "app"
